@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e5e7eb, #ffffff);
+    color: #1f2937;
+}
+
+header {
+    background-color: #0f172a;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+}
+
+.logo img {
+    height: 40px; /* You can increase/decrease this as needed */
+    width: auto;
+}
+
+.clinic-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn {
+    display: inline-block;
+    color: #0f172a; /* Dark text color */
+    padding: 0.75rem 1.5rem; /* Larger padding for visibility */
+    border: 2px solid #0f172a; /* Border to make it more defined */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0f172a; /* Dark background on hover */
+    color: white; /* White text on hover */
+    border-color: #ffffff; /* White border on hover */
+}
+
+
+.hero {
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Ensures the link has no underline */
+    background-color: #0f172a; /* Dark background color */
+    color: white; /* White text */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary:hover {
+    background-color: #374151; /* Slightly lighter dark background on hover */
+    transform: translateY(-3px); /* Adds a small hover animation */
+}
+
+
+.services-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0c1b33;
+    margin-bottom: 60px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #f9fbfc;
+    border-radius: 16px;
+    padding: 40px 30px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 42px;
+    color: #0c1b33;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0c1b33;
+    margin-bottom: 16px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #4f4f4f;
+    line-height: 1.7;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475467;
+    margin-bottom: 16px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #101828;
+    color: #101828;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #101828;
+    color: #fff;
+}
+
+.about-image {
+    flex: 1;
+    background-color: #e4e6ea;
+    border-radius: 12px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contact-section {
+    background-color: white;
+    padding: 60px 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 40px;
+}
+
+.contact-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: #f9fafb;
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 320px;
+    box-shadow: 0 0 0 1px #f0f0f0;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #101828;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #101828;
+}
+
+.office-hours {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 10px;
+    font-size: 16px;
+    color: #101828;
+}
+
+/* Footer styles */
+
+.footer {
+    background-color: #0f172a;
+    color: white;
+    padding: 30px 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer .logo i {
+    font-size: 22px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.slot-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.slot-btn.selected {
+    background-color: #007bff;
+    color: white;
+}

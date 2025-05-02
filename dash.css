@@ -1,0 +1,643 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    bottom: 0px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-section i {
+    font-size: 35px;
+    color: #2c3e50;
+}
+
+.logo-text h2 {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.logo-text p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+
+
+/* User Section */
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Profile Image Styles */
+.profile {
+    margin-left: 20px; 
+}
+
+.profile img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -50px;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on click */
+.show {
+    display: block;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Sidebar Menu */
+.menu {
+    margin-top: 20px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+.menu a i {
+    margin-right: 10px;
+}
+
+/* Logout Section */
+.logout {
+    padding-top: 100px;
+    border-top: 1px solid #ddd;
+    margin-top: 330px;
+}
+
+.logout a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    margin-top: -100px;
+}
+
+.logout a i {
+    margin-right: 10px;
+
+}
+
+/* Wrapper layout */
+
+
+/* Dash Container */
+.dashContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+/* Dashboard Header */
+.dashHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: auto;
+    z-index: 1000;
+    transition: top 0.3s;  /* Smooth hide/show effect */
+}
+
+/* Optional: Styling for Header Text */
+.dashHeader h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashHeader p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: black;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    z-index: 999;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Positions it directly below the header */
+}
+
+/* Individual Cards */
+.stats .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    padding: 25px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: calc(25% - 20px); /* 4 cards in a row */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Title with icon on the right */
+.stats .card .title {
+    display: flex;
+    justify-content: space-between;  /* Space between title and icon */
+    align-items: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+/* Title text */
+.stats .card .title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #212529;
+    margin: 0;
+}
+
+/* Icon Styling */
+.stats .card .title i {
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+}
+
+/* Number styling */
+.stats .card p {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 0;
+    color: #212529;
+}
+
+/* Small text styling - conditional colors */
+.stats .card small {
+    font-size: 14px;
+    color: #6c757d;  /* Default gray */
+}
+
+/* Higher value -> Green */
+.stats .card small.positive {
+    color: #28a745;  /* Green for positive growth */
+}
+
+/* Lower value -> Red */
+.stats .card small.negative {
+    color: #dc3545;  /* Red for negative growth */
+}
+
+/* Card hover effect */
+.stats .card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-5px);
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px;
+    min-height: calc(100vh - 160px); /* Accounts for header + stats */
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Appointments Section */
+.appointments {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 400%;
+    margin-left: -40px;
+}
+
+/* Appointment List */
+.appointments ul, .recent-patients ul, .activity ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.appointments li, .recent-patients li, .activity li {
+    display: flex;               /* Use flex layout */
+    align-items: center;         /* Vertically align items */
+    gap: 15px;                   /* Space between icon and info */
+    border-bottom: 1px solid #f1f1f1;
+    padding: 20px 0;
+}
+/* Circular Images */
+.appointments img, 
+.recent-patients img, 
+.activity img {
+    width: 60px;               /* Set a consistent size */
+    height: 60px;              /* Same height to make it circular */
+    border-radius: 50%;        /* Makes the image circular */
+    object-fit: cover;         /* Ensures the image fits inside the circle */
+    border: 2px solid #ccc;    /* Optional: Add a subtle border */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+/* Info beside the icon */
+.appointments .info {
+    display: flex;
+    flex-direction: column;    /* Stack name and time vertically */
+    justify-content: center;
+}
+
+/* Name styling */
+.appointments .info strong {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Time styling */
+.appointments .info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Button Styling */
+.appointments .view-btn {
+    display: inline-flex;         /* Align icon and text horizontally */
+    align-items: center;          /* Vertically center the icon and text */
+    gap: 8px;                     /* Space between icon and text */
+    color: black;
+    border: none;
+    padding: 10px 24px;           /* Balanced padding for better look */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-left: auto;            /* Push button to the right */
+    white-space: nowrap;          /* Prevent text wrapping */
+}
+
+/* Icon Styling */
+.appointments .view-btn i {
+    font-size: 16px;              /* Adjust icon size */
+}
+
+/* Hover effect */
+.appointments .view-btn:hover {
+
+    transform: translateY(-2px);  /* Slight lift on hover */
+}
+
+
+/* View All Button */
+.appointments .view-all {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.view-all-link {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.view-all-link .view-all {
+    display: block;  /* To apply the padding to the text */
+}
+
+
+
+/* Calendar Container */
+.calendar-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -370px;
+}
+.calendar h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Calendar Box Styling */
+.calendar-box {
+    width: 100%;
+    text-align: center;
+}
+
+/* Date Input Styling */
+#calendar {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Navigation Buttons */
+.calendar-header button {
+    color: #333;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calendar-header button:hover {
+    color: #333;
+}
+
+/* Day Names Section */
+.day-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for day names */
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Day Names Styling */
+.day-name {
+    font-weight: bold;
+    color: #555;
+    padding: 12px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Calendar Grid (Days) */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days */
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Calendar Days */
+.calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Highlight Today */
+.today {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.calendar-day:hover {
+    background: #f0f0f0;
+}
+
+/* Empty Days */
+.empty {
+    visibility: hidden;
+}
+
+
+
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Adds spacing between the two sections */
+    width: 150%;
+
+}
+
+/* Recent Patients & Activity */
+.recent-patients{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-left: -40px;
+    flex: 1; /* Makes both divs take equal space */
+    max-width: 50%; /* Ensures both sections share equal width */
+}
+/* View All Button */
+.recent-patients .view-all {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: auto; /* Push the button to the bottom */
+}
+.activity {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    flex: 1; /* Makes both divs take equal space */
+    max-width: 50%; /* Ensures both sections share equal width */
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .stats, .top-section, .bottom-section {
+        flex-direction: column;
+    }
+
+    .stats .card, .appointments, .calendar{
+        width: 100%;
+    }
+}
+
+/* Wrapper layout */
+.patientWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px; /* Leave space for sidebar */
+    margin-top: 40px; /* Leave space for header */
+    min-height: 100vh;
+    overflow-y: auto;
+}
+/* Patient Header */
+.patientHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: auto;
+    z-index: 1000;
+    transition: top 0.3s;  /* Smooth hide/show effect */
+}
+
+/* Optional: Styling for Header Text */
+.patientHeader h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.patientHeader p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: black;
+}
+.addPatientBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addPatientBtn:hover {
+    background-color: #45a049; /* Slightly darker green when hovered */
+}

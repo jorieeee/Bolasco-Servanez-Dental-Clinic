@@ -1,0 +1,296 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.header {
+    margin-top: -50px;
+    text-align: center;
+    margin-bottom: 10px; /* Space between header and container */
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.logo {
+    width: 100px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+.clinic-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: -5px;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+.container h2 {
+    margin-bottom: 5px;
+}
+.container p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f1f3f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.input-group i {
+    color: #6c757d;
+    margin-right: 10px;
+}
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 14px;
+}
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #222;
+}
+.requestHeader {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 5px; /* Space between header and container */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: -10px; /* Adjust this value as needed */
+}
+
+.clinic-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+.requestContainer {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+.requestContainerh2 {
+    margin-bottom: 5px;
+}
+.requestContainer p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/* Styles for Register Form */
+#requestForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#requestForm label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+#requestForm label i {
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+#requestForm input,
+#requestForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    background: #f1f3f5;
+}
+
+
+
+/* Container for input & icon */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Back to Login Link Styling */
+.back-to-login {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-to-login i {
+    margin-right: 5px;
+}
+
+.back-to-login:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* Verification Code Inputs in One Row */
+.verification-code {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between input fields */
+    margin-bottom: 20px;
+}
+
+.verification-code input {
+    width: 50px; /* Width for each input */
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f1f3f5;
+}
+
+/* Button and Action Styling */
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cancel-btn {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+
+
+.resend-link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* Back to Login Link Styling */
+.back-to-login {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-to-login i {
+    margin-right: 5px;
+}
+
+.back-to-login:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+

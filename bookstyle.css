@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 20px;
+  }
+  .back-to-home {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .back-btn {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .back-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: #6b7280;
+  }
+  
+  .tabs {
+    display: flex;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f5f9;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #374151;
+  }
+  
+  .tab.active {
+    background: white;
+    border-bottom: 3px solid black;
+    color: black;
+  }
+  
+  .form-section {
+    margin-top: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    color: #111827;
+  }
+  
+  .slots-container {
+    margin-top: 20px;
+  }
+  
+  .slots-container label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .slot-btn {
+    padding: 10px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+  }
+  
+  .slot-btn:hover {
+    background: black;
+    color: #fff;
+  }
+  
+  .slot-btn.selected {
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+  .submit-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .submit-btn {
+    margin-top: 20px;
+    background: black;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    right: -10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  /* Submit Section with Icon & Instructions */
+  .submit-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #6b7280;
+    border-radius: 8px;
+    background: #fefce8;
+  }
+  
+  .submit-section .notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .submit-section .notice .icon {
+    flex-shrink: 0;
+  }
+  
+  .submit-section .notice span {
+    font-weight: 500;
+    color:black;
+    font-size: 14px;
+  }
+  
+  .appointment-instructions {
+    padding-left: 20px;
+    color: black;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .appointment-instructions li {
+    margin-bottom: 6px;
+    list-style-type: disc;
+  }
